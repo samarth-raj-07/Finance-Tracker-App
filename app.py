@@ -58,10 +58,10 @@ def load_data():
     for row in rows:
         id_, date, category, amount, desc = row
         if category == "Income":
-            income_tree.insert("", "end", values=(id_, date, amount, desc), tags=("income_row",))
+            income_tree.insert("", "end", values=( date, amount, desc), tags=("income_row",))
             total_income += amount
         else:
-            expense_tree.insert("", "end", values=(id_, date, category, amount, desc), tags=(category,))
+            expense_tree.insert("", "end", values=( date, category, amount, desc), tags=(category,))
             total_expenses[category] += amount
 
     total_income_label.config(text=f"Total Income: ₹{total_income}")
