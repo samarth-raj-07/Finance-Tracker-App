@@ -55,6 +55,7 @@ def load_data():
     total_income = 0
     total_expenses = {"Needs": 0, "Wants": 0, "Savings": 0}
 
+
     for row in rows:
         id_, date, category, amount, desc = row
         if category == "Income":
