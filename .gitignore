@@ -1,0 +1,14 @@
+ # Ignore build and dist folders
+build/
+dist/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore database file
+expenses.db
+
+# Ignore PyInstaller spec file
+*.spec
